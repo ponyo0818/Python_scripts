@@ -107,7 +107,10 @@ for x in range(1,11):
 #take input in console
 message = input("Type word:")
 print("capital letters:", sum(1 for c in message if c.isupper()))
-# read txt file
+
+# read txt file 
+print(open('C:/Users/Yuan/Desktop/cs/python/interview/file.txt').read())
+# read txt file and count the uppercase letter
 with open('C:/Users/Yuan/Desktop/cs/python/interview/file.txt','r')as f: 
 #f= open('C:/Users/Yuan/Desktop/cs/python/interview/file.txt','r')
     count = 0;
@@ -274,6 +277,11 @@ print(list(map(list,x)))
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 print(thisset)
 
+a= {}
+print(type(a))
+a = set()
+print(type(a))
+
 #functional programming-writing pure functions
 list(map(lambda x : x*x, range(10)))
 
@@ -301,4 +309,71 @@ def readRandom(fname):
     return random.choice(lines)
 print(readRandom('C:/Users/Yuan/Desktop/cs/python/interview/file2.txt'))
     
+#try except
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
 
+#randomlize/shuffle a list
+x = [1, 2, 3, 4, 5]
+random.shuffle(x)
+print(x)
+
+#transform string to list
+list()
+#list to string
+name = ['s','t', 'o', 'p']
+name = ''.join(name)
+print(name)
+
+#zip function
+#Returns a single iterator object, having mapped values from all the containers.
+
+# initializing lists 
+name = [ "Manjeet", "Nikhil", "Shambhavi", "Astha" ] 
+roll_no = [ 4, 1, 3, 2 ] 
+marks = [ 40, 50, 60, 70 ] 
+  
+# using zip() to map values 
+mapped = zip(name, roll_no, marks) 
+  
+# converting values to print as set 
+mapped = set(mapped) 
+  
+# printing resultant values  
+print ("The zipped result is : ",end="") 
+print (mapped) 
+
+#preserve the insertion order of pairs in dictionary
+import collections
+d = {'Nane': "ponyo", "Age" : 3}
+d = collections.OrderedDict() #remember the order in which its contents are added
+
+#numpy array extention library, intergrating C/C++ and Fortran code
+import numpy
+numpy.array([])
+numpy.empty(shape = (0,0))
+
+#Return a new array of given shape and type, with zeros.
+import numpy as np
+a =np.zeros([2,2])
+print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -6,3 +6,6 @@ is used to return the vocabulary translate result using 2 online dictionary:
 # Youdao.py
 is used to return the translation result from Youdao translation
 adapt to python 3+
+
+# Interview.py
+Useful questions for Python interview 
